@@ -1,10 +1,11 @@
 <?php
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'kodjs');
-define('DB_PASSWORD', 'Yusuf1453');
-define('DB_DATABASE', 'kodjs_kodjs');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'db_kodjs');
 $connection = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 	
+//include("baglanti.php"); can be added
 	
     if(isset($_POST['action']) && $_POST['action'] == 'availability')
     {
